@@ -1,5 +1,7 @@
 # MMED 3012 Chat App
 
+## Introduction
+Online messaging applications have become increibly ubiquitous in today's society.  With that being said, each tend to follow very basic designs with similar user interfaces, therefore, I decided to create a brand new design. This new chat application will provide simplistic functionality with modern design to ensure a smooth and effortless experience for all users.  
 
 ## Getting Started
 
