@@ -1,17 +1,36 @@
 var express = require('express');
 var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+// var http = require('http').Server(app);
+var io = require('socket.io')(); //(http)
 
-const port = process.env.PORT || 3030; //if you are running multiple files or ports at once, you can just change this number and itll work 
+const port = process.env.PORT || 3000;
 
-// tlel express where our static files are (js, images, css etc)
+//tell express where our static files are (js, images, css, etc)
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html'); //__dirname is two underscores
+    res.sendFile(__dirname + '/views/index.html');
 });
 
-http.listen(port, () => { //http bc its the server object we created 
-    console.log(`app is running on port ${port}`)
+const server = app.listen(port, () => {
+    console.log(`app is running on port ${port}`);
 });
+
+io.attach(server);
+
+io.on('connection', function(socket){
+    console.log('a user has connected');
+
+    socket.emit('connected', { sID: `${socket.id}`, message: "new connection"});
+
+    socket.on('chat message', function(msg) {
+        console.log('message: ', msg, 'socket:', socket.id);
+
+        //send the message to everyone connected to the app
+        io.emit('chat message', {id: `${socket.id}`, message: msg});
+    })
+
+    socket.on('disconnect', function(){
+        console.log('a user has disconnected');
+    });
+})
