@@ -13,11 +13,11 @@
 <body id="body" class="dark-mode">
 	<main id="app">	
 		<section class="form-container">
-			<label for="nickname">Your Name</label>
+			<label for="nickname">Name</label>
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
-				<label for="message">Your Message</label>
+				<label for="message">Message</label>
 				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">			
 				
@@ -35,13 +35,17 @@
 			<ul id="messages" v-for="message in messages">
                 <newmessage :msg="message" class="animated slideInUp"></newmessage>
 			</ul>
+			
 		</section>	
+		
 	</main>
+	
 
 	<script src="/socket.io/socket.io.js"></script>
-	<script type="module" src="js/main_vm.js"></script>
 	<script src="js/modules/ColourSkins.js"></script>
 	<script src="gulpfile.js"></script>
+	<script type="module" src="js/main_vm.js"></script>
+
 
 </body>
 </html>
