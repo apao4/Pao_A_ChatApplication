@@ -4,28 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
 </head>
-<body>
-	<main id="app">		
+<body id="body" class="dark-mode">
+	<main id="app">	
 		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
-			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<label for="nickname">Your Name</label>
+			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 			
 			<form>
-				<label for="message">Something to say?</label>
-				<textarea class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input type="submit">
-			</form>
-		</section>
-		
-		<section class="messages">
-			<ul id="messages"">
+				<label for="message">Your Message</label>
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<input type="submit" @click.prevent="dispatchMessage">			
 				
+			</form>
+
+			<a class="circle" href="#" ><i id="circleWhite" class="fas fa-circle" onclick="addDefaultMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleBlack" class="fas fa-circle" onclick="addNightMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleRust" class="fas fa-circle" onclick="addRustMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleGreen" class="fas fa-circle" onclick="addGreenMode()"></i></a>
+
+			
+		</section>
+
+		<section class="messages">
+			<ul id="messages" v-for="message in messages">
+                <newmessage :msg="message" class="animated slideInUp"></newmessage>
 			</ul>
-		</section>		
+		</section>	
 	</main>
+
 	<script src="/socket.io/socket.io.js"></script>
 	<script type="module" src="js/main_vm.js"></script>
+	<script src="js/modules/ColourSkins.js"></script>
+	<script src="gulpfile.js"></script>
+
 </body>
 </html>
