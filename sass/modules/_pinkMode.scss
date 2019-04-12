@@ -13,6 +13,8 @@ form {
     // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
     // background-color: #f1d9db;
     background-image: url("../images/paint.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
