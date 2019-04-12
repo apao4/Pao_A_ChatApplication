@@ -2,12 +2,15 @@
 form {
 	input[type=submit] { 
 		background-color:#000000;
+		float: right;
+        border: none;
 	}
 }
 
 .form-container { 
 	// border: 6px solid #252829;
 	background-color: #242424;
+	// background-image: url("../images/stars.jpg");
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
@@ -19,7 +22,7 @@ form {
 }
 
 input, textarea { 
-	border: 2px solid #8c8c8c;
+	border: 2px solid #9c9b9b;
 	//border-color: #bfcfd6; 
 }
 
@@ -27,20 +30,8 @@ input, textarea {
 	li:nth-child(odd) { background: rgb(110, 110, 110); }
 }
 
-#moon i {
-	font-size: 2.5em;
-	color: white;
-	margin-top: 55%;
-}
-
-#sun i {
-	font-size: 2.5em;
-	color: white;
-	margin-top: 55%;
-}
-
 #nickname, #textarea {
-    background-color: #828e94;
+    background-color: #A9A9A9;
 }
 
 #nickname::placeholder{

@@ -29,8 +29,7 @@ main {
 
 .messages {
   flex: 2;
-  background-color: #eee;
-  border: 6px solid #e2e0e0; }
+  background-color: #eee; }
 
 input, textarea {
   display: block;
@@ -55,7 +54,9 @@ form {
     color: white;
     cursor: pointer;
     text-transform: uppercase;
-    font-weight: bold; }
+    font-weight: bold;
+    float: right;
+    border: none; }
 
 #messages {
   list-style-type: none;
@@ -84,38 +85,30 @@ form {
   background-color: #007AFF;
   color: white; }
 
-.defaultMode form input[type=submit] {
-  background-color: #273D40; }
-.defaultMode .form-container {
-  background-color: #a4acac; }
-  .defaultMode .form-container label {
+.new-message {
+  width: 45%;
+  padding: 8px 12px;
+  background-color: #D3D3D3;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  float: left;
+  clear: both; }
+  .new-message span {
+    font-size: 1em;
     display: block;
-    margin-bottom: 0.5rem; }
-.defaultMode .messages {
-  flex: 2;
-  background-color: #7b8c80; }
-.defaultMode input, .defaultMode textarea {
-  border: 2px solid #7b8c80; }
-.defaultMode #messages li:nth-child(odd) {
-  background: #6e6e6e; }
-.defaultMode #nickname, .defaultMode #textarea {
-  background-color: #D2CEC2; }
-.defaultMode #nickname::placeholder {
-  color: #273D40; }
-.defaultMode label {
-  color: white; }
-.defaultMode .new-message {
-  background-color: #a4acac;
-  color: white; }
-  .defaultMode .new-message span {
-    display: block;
-    margin-bottom: 2px; }
-.defaultMode .my-message {
-  background-color: #3d4e49;
+    margin-bottom: 2px;
+    float: right;
+    border: none; }
+
+.my-message {
+  float: right !important;
+  background-color: #007AFF;
   color: white; }
 
 .nightMode form input[type=submit] {
-  background-color: #000000; }
+  background-color: #000000;
+  float: right;
+  border: none; }
 .nightMode .form-container {
   background-color: #242424; }
   .nightMode .form-container label {
@@ -125,19 +118,11 @@ form {
   flex: 2;
   background-color: #343434; }
 .nightMode input, .nightMode textarea {
-  border: 2px solid #8c8c8c; }
+  border: 2px solid #9c9b9b; }
 .nightMode #messages li:nth-child(odd) {
   background: #6e6e6e; }
-.nightMode #moon i {
-  font-size: 2.5em;
-  color: white;
-  margin-top: 55%; }
-.nightMode #sun i {
-  font-size: 2.5em;
-  color: white;
-  margin-top: 55%; }
 .nightMode #nickname, .nightMode #textarea {
-  background-color: #828e94; }
+  background-color: #A9A9A9; }
 .nightMode #nickname::placeholder {
   color: black; }
 .nightMode label {
@@ -153,25 +138,29 @@ form {
   color: white; }
 
 .rustMode form input[type=submit] {
-  background-color: #000000; }
+  background-color: #C97253;
+  float: right;
+  border: none; }
 .rustMode .form-container {
-  background-color: #242424; }
+  background-image: url("../images/geo.jpg");
+  background-color: #7A7570; }
   .rustMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
 .rustMode .messages {
   flex: 2;
-  background-color: #343434; }
+  background-color: #fff; }
 .rustMode input, .rustMode textarea {
-  border: 2px solid #D2CEC2; }
+  border: 2px solid #fff;
+  border-color: #f8dfd8; }
 .rustMode #messages li:nth-child(odd) {
   background: #6e6e6e; }
 .rustMode #nickname, .rustMode #textarea {
-  background-color: #D2CEC2; }
+  background-color: #f8dfd8; }
 .rustMode #nickname::placeholder {
-  color: black; }
+  color: #3A3A3A; }
 .rustMode label {
-  color: white; }
+  color: #C97253; }
 .rustMode .new-message {
   background-color: #7A7570;
   color: white; }
@@ -183,33 +172,104 @@ form {
   color: white; }
 
 .greenMode form input[type=submit] {
-  background-color: #273D40; }
+  background-color: #273D40;
+  float: right;
+  border: none; }
 .greenMode .form-container {
-  background-color: #a4acac; }
+  background-image: url("../images/succulent.jpg"); }
   .greenMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
 .greenMode .messages {
   flex: 2;
-  background-color: #7b8c80; }
+  background-color: #f2f2f2; }
 .greenMode input, .greenMode textarea {
-  border: 2px solid #7b8c80; }
+  border: 2px solid #7b8c80;
+  border-color: #bfcfd6; }
 .greenMode #messages li:nth-child(odd) {
   background: #6e6e6e; }
 .greenMode #nickname, .greenMode #textarea {
-  background-color: #D2CEC2; }
+  background-color: #FFF;
+  border: none; }
 .greenMode #nickname::placeholder {
   color: #273D40; }
 .greenMode label {
-  color: white; }
+  color: #3a3a3a; }
 .greenMode .new-message {
-  background-color: #a4acac;
-  color: white; }
+  background-color: #f1fce8;
+  color: #3a3a3a; }
   .greenMode .new-message span {
     display: block;
     margin-bottom: 2px; }
 .greenMode .my-message {
   background-color: #3d4e49;
+  color: white; }
+
+.pinkMode form input[type=submit] {
+  background-color: #d9b8a9;
+  color: #3a3a3a;
+  float: right;
+  border: none; }
+.pinkMode .form-container {
+  background-image: url("../images/paint.jpg"); }
+  .pinkMode .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+.pinkMode .messages {
+  flex: 2;
+  background-color: #fff; }
+.pinkMode input, .pinkMode textarea {
+  border: 2px solid #FFFFFF; }
+.pinkMode #messages li:nth-child(odd) {
+  background: #6e6e6e; }
+.pinkMode #nickname, .pinkMode #textarea {
+  background-color: #FFFFFF; }
+.pinkMode #nickname::placeholder {
+  color: #3a3a3a; }
+.pinkMode label {
+  color: #3a3a3a; }
+.pinkMode .new-message {
+  background-color: #8c8c8c;
+  color: white; }
+  .pinkMode .new-message span {
+    display: block;
+    margin-bottom: 2px; }
+.pinkMode .my-message {
+  background-color: #f9e3e5;
+  color: #3a3a3a; }
+
+.sunsetMode form input[type=submit] {
+  background-color: #fff7ef;
+  color: #3a3a3a;
+  float: right;
+  border: none; }
+.sunsetMode .form-container {
+  background-image: url("../images/water.jpg");
+  background-color: #f1d9db; }
+  .sunsetMode .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+.sunsetMode .messages {
+  flex: 2;
+  background-color: #fff7ef; }
+.sunsetMode input, .sunsetMode textarea {
+  border: 2px solid #FFFFFF; }
+.sunsetMode #messages li:nth-child(odd) {
+  background: #6e6e6e; }
+.sunsetMode #nickname, .sunsetMode #textarea {
+  background-color: #FFFFFF; }
+.sunsetMode #nickname::placeholder {
+  color: #3a3a3a; }
+.sunsetMode label {
+  color: white; }
+.sunsetMode .new-message {
+  background-color: #8c8c8c;
+  color: white; }
+  .sunsetMode .new-message span {
+    display: block;
+    margin-bottom: 2px; }
+.sunsetMode .my-message {
+  background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
   color: white; }
 
 #circleBlack {
@@ -231,5 +291,15 @@ form {
   font-size: 2.5em;
   margin-top: 60%;
   color: #3d4e49; }
+
+#circlePink {
+  font-size: 2.5em;
+  margin-top: 60%;
+  color: pink; }
+
+#circleSunset {
+  font-size: 2.5em;
+  margin-top: 60%;
+  color: #fcbf83; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Socket IO Chat with Node!</title>
+	<title>Chitty Chatty Bang Bang - Chat App</title>
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" href="stylesheets/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
@@ -18,7 +18,7 @@
 			
 			<form>
 				<label for="message">Message</label>
-				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea" placeholder="Enter your message"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">			
 				
 			</form>
@@ -27,6 +27,8 @@
 			<a class="circle" href="#" ><i id="circleBlack" class="fas fa-circle" onclick="addNightMode()"></i></a>
 			<a class="circle" href="#" ><i id="circleRust" class="fas fa-circle" onclick="addRustMode()"></i></a>
 			<a class="circle" href="#" ><i id="circleGreen" class="fas fa-circle" onclick="addGreenMode()"></i></a>
+			<a class="circle" href="#" ><i id="circlePink" class="fas fa-circle" onclick="addPinkMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleSunset" class="fas fa-circle" onclick="addSunsetMode()"></i></a>
 
 			
 		</section>

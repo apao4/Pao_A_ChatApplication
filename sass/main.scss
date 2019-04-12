@@ -24,7 +24,7 @@ main {
 .messages { 
 	flex: 2;
 	background-color: #eee;
-	border: 6px solid #e2e0e0; 
+	// border: 6px solid #e2e0e0; 
 }
 
 input, textarea { 
@@ -57,6 +57,8 @@ form {
 		cursor: pointer;
 		text-transform: uppercase;
 		font-weight: bold;
+		float: right;
+        border: none;
 	}
 }
 
@@ -74,28 +76,42 @@ form {
 @import 'modules/_nightMode';
 @import 'modules/_rustMode';
 @import 'modules/_greenMode';
+@import 'modules/_pinkMode';
+@import 'modules/_sunsetMode';
 
 //main stuff i added 
 #circleBlack {
     font-size: 2.5em;
     margin-top: 60%;
-    color: black
+    color: black;
 }
 
 #circleWhite {
     font-size: 2.5em;
     margin-top: 60%;
-    color: white
+    color: white;
 }
 
 #circleRust {
     font-size: 2.5em;
     margin-top: 60%;
-    color: #C97253
+    color: #C97253;
 }
 
 #circleGreen {
     font-size: 2.5em;
     margin-top: 60%;
-    color: #3d4e49
+    color: #3d4e49;
+}
+
+#circlePink {
+    font-size: 2.5em;
+    margin-top: 60%;
+    color: pink;
+}
+
+#circleSunset {
+    font-size: 2.5em;
+    margin-top: 60%;
+    color: #fcbf83;
 }
