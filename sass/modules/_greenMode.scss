@@ -1,25 +1,25 @@
-.black{
+.greenMode{
 form {
 	input[type=submit] { 
-		background-color:#000000;
+		background-color:#273D40;
 	}
 }
 
 .form-container { 
-	border: 6px solid #252829;
-	background-color: #3e4244;
+	// border: 6px solid #252829;
+	background-color: #a4acac;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
 	flex: 2;
-	background-color: rgb(20, 53, 58);
-	border: 6px solid #000000; 
+	background-color: #7b8c80;
+	// border: 6px solid #000000; 
 }
 
 input, textarea { 
-	border: 2px solid #828e94;
+	border: 2px solid #7b8c80;
 	//border-color: #bfcfd6; 
 }
 
@@ -27,24 +27,13 @@ input, textarea {
 	li:nth-child(odd) { background: rgb(110, 110, 110); }
 }
 
-#moon i {
-	font-size: 2.5em;
-	color: white;
-	margin-top: 55%;
-}
-
-#sun i {
-	font-size: 2.5em;
-	color: white;
-	margin-top: 55%;
-}
 
 #nickname, #textarea {
-    background-color: #828e94;
+    background-color: #D2CEC2;
 }
 
 #nickname::placeholder{
-    color: black;
+    color: #273D40;
 }
 
 label {
@@ -56,18 +45,14 @@ label {
 		display: block; 
 		margin-bottom: 2px; 	
 	}
-	background-color: black; 
+	background-color: #a4acac; 
 	color: white;
 
 }
 
 .my-message {
-    background-color: #446868;
+    background-color: #3d4e49;
     color: white;
 }
-
-
-
-
 }
 
