@@ -1,26 +1,30 @@
 .greenMode{
 form {
 	input[type=submit] { 
-		background-color:#273D40;
+        background-color:#273D40;
+        float: right;
+        border: none;
 	}
 }
 
 .form-container { 
 	// border: 6px solid #252829;
-	background-color: #a4acac;
+    // background-color: #eef2da;
+    background-image: url("../images/succulent.jpg");
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
-	flex: 2;
-	background-color: #7b8c80;
+    flex: 2;
+    // background-image: url("../images/succulents.jpg");
+	background-color: #f2f2f2;
 	// border: 6px solid #000000; 
 }
 
 input, textarea { 
 	border: 2px solid #7b8c80;
-	//border-color: #bfcfd6; 
+	border-color: #bfcfd6; 
 }
 
 #messages {
@@ -29,7 +33,8 @@ input, textarea {
 
 
 #nickname, #textarea {
-    background-color: #D2CEC2;
+    background-color: #FFF;
+    border: none;
 }
 
 #nickname::placeholder{
@@ -37,7 +42,7 @@ input, textarea {
 }
 
 label {
-    color: white;
+    color: #3a3a3a;
 }
 
 .new-message { 
@@ -45,8 +50,8 @@ label {
 		display: block; 
 		margin-bottom: 2px; 	
 	}
-	background-color: #a4acac; 
-	color: white;
+	background-color: #f1fce8; 
+	color: #3a3a3a;
 
 }
 
