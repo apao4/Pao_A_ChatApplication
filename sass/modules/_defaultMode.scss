@@ -1,0 +1,58 @@
+.defaultMode{
+form {
+	input[type=submit] { 
+		background-color:#273D40;
+	}
+}
+
+.form-container { 
+	// border: 6px solid #252829;
+	background-color: #a4acac;
+
+	label { display: block; margin-bottom: 0.5rem; }
+}
+
+.messages { 
+	flex: 2;
+	background-color: #7b8c80;
+	// border: 6px solid #000000; 
+}
+
+input, textarea { 
+	border: 2px solid #7b8c80;
+	//border-color: #bfcfd6; 
+}
+
+#messages {
+	li:nth-child(odd) { background: rgb(110, 110, 110); }
+}
+
+
+#nickname, #textarea {
+    background-color: #D2CEC2;
+}
+
+#nickname::placeholder{
+    color: #273D40;
+}
+
+label {
+    color: white;
+}
+
+.new-message { 
+	span { 
+		display: block; 
+		margin-bottom: 2px; 	
+	}
+	background-color: #a4acac; 
+	color: white;
+
+}
+
+.my-message {
+    background-color: #3d4e49;
+    color: white;
+}
+}
+
