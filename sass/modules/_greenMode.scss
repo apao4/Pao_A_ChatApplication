@@ -1,0 +1,65 @@
+.greenMode{
+form {
+	input[type=submit] { 
+        background-color:#273D40;
+        color: white;
+        float: right;
+        border: none;
+	}
+}
+
+.form-container { 
+	// border: 6px solid #252829;
+    // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
+    background-image: url("../images/plant.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // background-color: #f1d9db;
+
+	label { display: block; margin-bottom: 0.5rem; }
+}
+
+.messages { 
+	flex: 2;
+    background-color: #f2f2f2
+    // border: 6px solid #000000; 
+    
+}
+
+// input, textarea { 
+// 	// border: 2px solid #7b8c80;
+// 	//border-color: #bfcfd6; 
+// }
+
+#messages {
+	li:nth-child(odd) { background: rgb(110, 110, 110); }
+}
+
+#nickname, #textarea {
+    background-color: #FFFFFF;
+}
+
+#nickname::placeholder{
+    color: #273D40;
+}
+
+label {
+    color: #3a3a3a;
+}
+
+.new-message { 
+	span { 
+		display: block; 
+		margin-bottom: 2px; 	
+	}
+	background-color: #9AB188; 
+	color: #3A3A3A;
+
+}
+
+.my-message {
+    background-color: #3d4e49;
+    color: white;
+}
+}
+

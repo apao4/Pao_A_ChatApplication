@@ -1,39 +1,91 @@
 function addDefaultMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
     var body = document.body.classList.add("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
 }
 
 function addNightMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
     var body = document.body.classList.add("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
 }
 
-// function removeNightMode(){
-//     var body = document.body.classList.remove("nightMode");
-// }
-
 function addRustMode(){
+    var body = document.body.classList.remove("greenMode");
     var body = document.body.classList.add("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
 }
 
 function addGreenMode(){
     var body = document.body.classList.add("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
 }
 
-// function toggleDarkLight() {
-//     var body = document.getElementById("body");
-//     var currentClass = body.className;
-//     body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-//   }
+function addPinkMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.add("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
+}
 
-// var nightModeToggleButton = document.querySelector(".nightModeButton");
-// var container = document.querySelector(".container");
-// var para = document.querySelector(".paragraph");
-// var header = document.querySelector(".header");
-// var body = document.querySelector("body");
+function addSunsetMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.add("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.remove("purpleMode");
+}
 
-// nightModeToggleButton.onclick = function () {
-//   nightModeToggleButton.classList.toggle("night-mode");
-//   container.classList.toggle("night-mode");
-//   para.classList.toggle("night-mode");
-//   header.classList.toggle("night-mode");
-//   body.classList.toggle("night-mode");
-// };
+function addBeachMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.add("beachMode");
+    var body = document.body.classList.remove("purpleMode");
+}
+
+function addPurpleMode(){
+    var body = document.body.classList.remove("greenMode");
+    var body = document.body.classList.remove("rustMode");
+    var body = document.body.classList.remove("nightMode");
+    var body = document.body.classList.remove("defaultMode");
+    var body = document.body.classList.remove("pinkMode");
+    var body = document.body.classList.remove("sunsetMode");
+    var body = document.body.classList.remove("beachMode");
+    var body = document.body.classList.add("purpleMode");
+}
+
+
+
+addGreenMode.addEventListener('click', myFunction);

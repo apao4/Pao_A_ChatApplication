@@ -1,7 +1,7 @@
-.nightMode{
+.purpleMode{
 form {
 	input[type=submit] { 
-		background-color:#000000;
+		background-color: #7b658b;
 		float: right;
         border: none;
 	}
@@ -9,37 +9,40 @@ form {
 
 .form-container { 
 	// border: 6px solid #252829;
-	background-color: #242424;
-	// background-image: url("../images/stars.jpg");
+	background-image: url("../images/purple.jpg");
+	background-color: #7A7570;
+	background-repeat: no-repeat;
+    background-size: 100%;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
 	flex: 2;
-	background-color: #343434;
+	background-color: #e3dff0;
 	// border: 6px solid #000000; 
 }
 
 input, textarea { 
-	border: 2px solid #9c9b9b;
-	//border-color: #bfcfd6; 
+	border: 2px solid #fff;
+	// border-color: #f8dfd8; 
 }
 
 #messages {
 	li:nth-child(odd) { background: rgb(110, 110, 110); }
 }
 
+
 #nickname, #textarea {
-    background-color: #A9A9A9;
+    background-color: #FFF;
 }
 
 #nickname::placeholder{
-    color: black;
+    color: #3A3A3A;
 }
 
 label {
-    color: white;
+    color: #FFF;
 }
 
 .new-message { 
@@ -47,13 +50,13 @@ label {
 		display: block; 
 		margin-bottom: 2px; 	
 	}
-	background-color: #8c8c8c; 
+	background-color: #9d87ae; 
 	color: white;
 
 }
 
 .my-message {
-    background-color: #007AFF;
+    background-color: #7b658b;
     color: white;
 }
 }
