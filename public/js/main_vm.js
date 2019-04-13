@@ -27,7 +27,7 @@ const vm = new Vue ({
     methods: {
         dispatchMessage(){
             //emit message event from the client side
-            socket.emit('chat message', {content: this.message, name: this.nickname || "Anonymous"});
+            socket.emit('chat message', {content: this.message, name: this.nickname || "New User"});
 
             //reset the message
             this.message = "";
