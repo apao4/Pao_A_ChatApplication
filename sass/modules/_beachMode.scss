@@ -1,0 +1,67 @@
+.beachMode{
+form {
+	input[type=submit] { 
+        background-color: #d9b8a9;
+        color: #3a3a3a;
+        float: right;
+        border: none;
+	}
+}
+
+.form-container { 
+	// border: 6px solid #252829;
+    // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
+    // background-color: #f1d9db;
+    background-image: url("../images/wave.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+
+	label { display: block; margin-bottom: 0.5rem; }
+}
+
+.messages { 
+	flex: 2;
+	background-color: #c2d8e3;
+	// border: 6px solid #000000; 
+}
+
+input, textarea { 
+	border: 2px solid #FFFFFF;
+	//border-color: #bfcfd6; 
+}
+
+#messages {
+	li:nth-child(odd) { background: rgb(110, 110, 110); }
+}
+
+#nickname, #textarea {
+    background-color: #FFFFFF;
+    // border: 2px solid #3a3a3a;
+}
+
+#nickname::placeholder{
+    color: #3a3a3a;
+}
+
+label {
+    color: #584b3b;
+    text-shadow: 1px 1px 1px white;
+}
+
+.new-message { 
+	span { 
+		display: block; 
+		margin-bottom: 2px; 	
+	}
+	background-color: #a4c2cd; 
+	color: #3a3a3a;
+
+}
+
+.my-message {
+    
+    background-color: #516975;
+    color: #FFF;
+}
+}
+

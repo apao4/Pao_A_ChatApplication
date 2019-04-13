@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Socket IO Chat with Node!</title>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/animate.css">
+	<title>Chitty Chatty Bang Bang - Chat App</title>
+	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="stylesheets/animate.css">
 	<script src="https://unpkg.com/vue"></script> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 </head>
+
 <body id="body" class="dark-mode">
 	<main id="app">	
 		<section class="form-container">
-			<label for="nickname">Your Name</label>
-			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+			<label for="nickname">Name</label>
+			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="Enter your name">
 			
 			<form>
-				<label for="message">Your Message</label>
-				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+				<label for="message">Message</label>
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea" placeholder="Enter your message"></textarea>
 				<input type="submit" @click.prevent="dispatchMessage">			
 				
 			</form>
@@ -27,21 +28,28 @@
 			<a class="circle" href="#" ><i id="circleBlack" class="fas fa-circle" onclick="addNightMode()"></i></a>
 			<a class="circle" href="#" ><i id="circleRust" class="fas fa-circle" onclick="addRustMode()"></i></a>
 			<a class="circle" href="#" ><i id="circleGreen" class="fas fa-circle" onclick="addGreenMode()"></i></a>
-
-			
+			<a class="circle" href="#" ><i id="circlePink" class="fas fa-circle" onclick="addPinkMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleSunset" class="fas fa-circle" onclick="addSunsetMode()"></i></a>
+			<a class="circle" href="#" ><i id="circleBeach" class="fas fa-circle" onclick="addBeachMode()"></i></a>
+			<a class="circle" href="#" ><i id="circlePurple" class="fas fa-circle" onclick="addPurpleMode()"></i></a>
+			 
 		</section>
 
 		<section class="messages">
 			<ul id="messages" v-for="message in messages">
                 <newmessage :msg="message" class="animated slideInUp"></newmessage>
 			</ul>
+			
 		</section>	
+		
 	</main>
+	
 
 	<script src="/socket.io/socket.io.js"></script>
-	<script type="module" src="js/main_vm.js"></script>
 	<script src="js/modules/ColourSkins.js"></script>
 	<script src="gulpfile.js"></script>
+	<script type="module" src="js/main_vm.js"></script>
+
 
 </body>
 </html>

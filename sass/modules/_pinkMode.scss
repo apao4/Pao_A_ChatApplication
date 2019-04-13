@@ -1,28 +1,32 @@
-.nightMode{
+.pinkMode{
 form {
 	input[type=submit] { 
-		background-color:#000000;
-		float: right;
+        background-color: #d9b8a9;
+        color: #3a3a3a;
+        float: right;
         border: none;
 	}
 }
 
 .form-container { 
 	// border: 6px solid #252829;
-	background-color: #242424;
-	// background-image: url("../images/stars.jpg");
+    // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
+    // background-color: #f1d9db;
+    background-image: url("../images/paint.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
 	flex: 2;
-	background-color: #343434;
+	background-color: #fff;
 	// border: 6px solid #000000; 
 }
 
 input, textarea { 
-	border: 2px solid #9c9b9b;
+	border: 2px solid #FFFFFF;
 	//border-color: #bfcfd6; 
 }
 
@@ -31,15 +35,16 @@ input, textarea {
 }
 
 #nickname, #textarea {
-    background-color: #A9A9A9;
+    background-color: #FFFFFF;
+    // border: 2px solid #3a3a3a;
 }
 
 #nickname::placeholder{
-    color: black;
+    color: #3a3a3a;
 }
 
 label {
-    color: white;
+    color: #3a3a3a;
 }
 
 .new-message { 
@@ -53,8 +58,9 @@ label {
 }
 
 .my-message {
-    background-color: #007AFF;
-    color: white;
+    
+    background-color: #f9e3e5;
+    color: #3a3a3a;
 }
 }
 

@@ -7,7 +7,7 @@ function logConnect({sID, message}){ //sID, message
     vm.socketID = sID;
 
     var userConnect = new Object();
-	socket.emit('chat message', { content: "User connected", object: userConnect});
+	socket.emit('chat message', { content: "New user has connected", object: userConnect});
 }
 
 
