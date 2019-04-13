@@ -78,40 +78,80 @@ form {
 @import 'modules/_greenMode';
 @import 'modules/_pinkMode';
 @import 'modules/_sunsetMode';
+@import 'modules/_beachMode';
+@import 'modules/_purpleMode';
 
 //main stuff i added 
 #circleBlack {
     font-size: 2.5em;
     margin-top: 60%;
-    color: black;
+	color: black;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
 
 #circleWhite {
     font-size: 2.5em;
     margin-top: 60%;
-    color: white;
+	color: white;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
 
 #circleRust {
     font-size: 2.5em;
     margin-top: 60%;
-    color: #C97253;
+	color: #C97253;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
 
 #circleGreen {
     font-size: 2.5em;
     margin-top: 60%;
-    color: #3d4e49;
+	color: #9AB188;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
 
 #circlePink {
     font-size: 2.5em;
     margin-top: 60%;
-    color: pink;
+	color: pink;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
 
 #circleSunset {
     font-size: 2.5em;
     margin-top: 60%;
-    color: #fcbf83;
+	color: #fcbf83;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
 }
+
+#circleBeach {
+    font-size: 2.5em;
+    margin-top: 60%;
+	color: #c2d8e3;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
+}
+
+#circlePurple {
+    font-size: 2.5em;
+    margin-top: 60%;
+	color: #7b658b;
+	border: 1px #3a3a3a;
+	text-shadow: 1px 1px 2px#3a3a3a;
+}
+
+// .circle a:hover n
+// {
+// 	text-shadow: 2px 2px 2px red;
+// }
+
+// .circle:active 
+// {
+// 	text-shadow: 2px 2px 2px red;
+// }

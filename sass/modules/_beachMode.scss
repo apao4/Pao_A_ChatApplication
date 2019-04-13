@@ -1,7 +1,7 @@
-.sunsetMode{
+.beachMode{
 form {
 	input[type=submit] { 
-        background-color:#fff7ef;
+        background-color: #d9b8a9;
         color: #3a3a3a;
         float: right;
         border: none;
@@ -11,17 +11,17 @@ form {
 .form-container { 
 	// border: 6px solid #252829;
     // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
-    background-image: url("../images/water.jpg");
-    background-color: #f1d9db;
+    // background-color: #f1d9db;
+    background-image: url("../images/wave.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%; 
 
 	label { display: block; margin-bottom: 0.5rem; }
 }
 
 .messages { 
 	flex: 2;
-	background-color: #fff7ef;
+	background-color: #c2d8e3;
 	// border: 6px solid #000000; 
 }
 
@@ -36,6 +36,7 @@ input, textarea {
 
 #nickname, #textarea {
     background-color: #FFFFFF;
+    // border: 2px solid #3a3a3a;
 }
 
 #nickname::placeholder{
@@ -43,7 +44,8 @@ input, textarea {
 }
 
 label {
-    color: white;
+    color: #584b3b;
+    text-shadow: 1px 1px 1px white;
 }
 
 .new-message { 
@@ -51,14 +53,15 @@ label {
 		display: block; 
 		margin-bottom: 2px; 	
 	}
-	background-color: #8c8c8c; 
-	color: white;
+	background-color: #a4c2cd; 
+	color: #3a3a3a;
 
 }
 
 .my-message {
-    background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
-    color: white;
+    
+    background-color: #516975;
+    color: #FFF;
 }
 }
 

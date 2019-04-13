@@ -1,19 +1,17 @@
-.sunsetMode{
+.purpleMode{
 form {
 	input[type=submit] { 
-        background-color:#fff7ef;
-        color: #3a3a3a;
-        float: right;
+		background-color: #7b658b;
+		float: right;
         border: none;
 	}
 }
 
 .form-container { 
 	// border: 6px solid #252829;
-    // background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
-    background-image: url("../images/water.jpg");
-    background-color: #f1d9db;
-    background-repeat: no-repeat;
+	background-image: url("../images/purple.jpg");
+	background-color: #7A7570;
+	background-repeat: no-repeat;
     background-size: 100%;
 
 	label { display: block; margin-bottom: 0.5rem; }
@@ -21,29 +19,30 @@ form {
 
 .messages { 
 	flex: 2;
-	background-color: #fff7ef;
+	background-color: #e3dff0;
 	// border: 6px solid #000000; 
 }
 
 input, textarea { 
-	border: 2px solid #FFFFFF;
-	//border-color: #bfcfd6; 
+	border: 2px solid #fff;
+	// border-color: #f8dfd8; 
 }
 
 #messages {
 	li:nth-child(odd) { background: rgb(110, 110, 110); }
 }
 
+
 #nickname, #textarea {
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 #nickname::placeholder{
-    color: #3a3a3a;
+    color: #3A3A3A;
 }
 
 label {
-    color: white;
+    color: #FFF;
 }
 
 .new-message { 
@@ -51,13 +50,13 @@ label {
 		display: block; 
 		margin-bottom: 2px; 	
 	}
-	background-color: #8c8c8c; 
+	background-color: #9d87ae; 
 	color: white;
 
 }
 
 .my-message {
-    background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
+    background-color: #7b658b;
     color: white;
 }
 }

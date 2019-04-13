@@ -71,6 +71,8 @@ form {
   width: 45%;
   padding: 8px 12px;
   background-color: #D3D3D3;
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
   float: left;
@@ -143,7 +145,9 @@ form {
   border: none; }
 .rustMode .form-container {
   background-image: url("../images/geo.jpg");
-  background-color: #7A7570; }
+  background-color: #7A7570;
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .rustMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
@@ -173,31 +177,30 @@ form {
 
 .greenMode form input[type=submit] {
   background-color: #273D40;
+  color: white;
   float: right;
   border: none; }
 .greenMode .form-container {
-  background-image: url("../images/succulent.jpg"); }
+  background-image: url("../images/plant.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .greenMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
 .greenMode .messages {
   flex: 2;
   background-color: #f2f2f2; }
-.greenMode input, .greenMode textarea {
-  border: 2px solid #7b8c80;
-  border-color: #bfcfd6; }
 .greenMode #messages li:nth-child(odd) {
   background: #6e6e6e; }
 .greenMode #nickname, .greenMode #textarea {
-  background-color: #FFF;
-  border: none; }
+  background-color: #FFFFFF; }
 .greenMode #nickname::placeholder {
   color: #273D40; }
 .greenMode label {
   color: #3a3a3a; }
 .greenMode .new-message {
-  background-color: #f1fce8;
-  color: #3a3a3a; }
+  background-color: #9AB188;
+  color: #3A3A3A; }
   .greenMode .new-message span {
     display: block;
     margin-bottom: 2px; }
@@ -211,7 +214,9 @@ form {
   float: right;
   border: none; }
 .pinkMode .form-container {
-  background-image: url("../images/paint.jpg"); }
+  background-image: url("../images/paint.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .pinkMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
@@ -245,7 +250,9 @@ form {
   border: none; }
 .sunsetMode .form-container {
   background-image: url("../images/water.jpg");
-  background-color: #f1d9db; }
+  background-color: #f1d9db;
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .sunsetMode .form-container label {
     display: block;
     margin-bottom: 0.5rem; }
@@ -272,34 +279,131 @@ form {
   background: linear-gradient(to top, #ff9966 0%, #ff99cc 100%);
   color: white; }
 
+.beachMode form input[type=submit] {
+  background-color: #d9b8a9;
+  color: #3a3a3a;
+  float: right;
+  border: none; }
+.beachMode .form-container {
+  background-image: url("../images/wave.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .beachMode .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+.beachMode .messages {
+  flex: 2;
+  background-color: #c2d8e3; }
+.beachMode input, .beachMode textarea {
+  border: 2px solid #FFFFFF; }
+.beachMode #messages li:nth-child(odd) {
+  background: #6e6e6e; }
+.beachMode #nickname, .beachMode #textarea {
+  background-color: #FFFFFF; }
+.beachMode #nickname::placeholder {
+  color: #3a3a3a; }
+.beachMode label {
+  color: #584b3b;
+  text-shadow: 1px 1px 1px white; }
+.beachMode .new-message {
+  background-color: #a4c2cd;
+  color: #3a3a3a; }
+  .beachMode .new-message span {
+    display: block;
+    margin-bottom: 2px; }
+.beachMode .my-message {
+  background-color: #516975;
+  color: #FFF; }
+
+.purpleMode form input[type=submit] {
+  background-color: #7b658b;
+  float: right;
+  border: none; }
+.purpleMode .form-container {
+  background-image: url("../images/purple.jpg");
+  background-color: #7A7570;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+  .purpleMode .form-container label {
+    display: block;
+    margin-bottom: 0.5rem; }
+.purpleMode .messages {
+  flex: 2;
+  background-color: #e3dff0; }
+.purpleMode input, .purpleMode textarea {
+  border: 2px solid #fff; }
+.purpleMode #messages li:nth-child(odd) {
+  background: #6e6e6e; }
+.purpleMode #nickname, .purpleMode #textarea {
+  background-color: #FFF; }
+.purpleMode #nickname::placeholder {
+  color: #3A3A3A; }
+.purpleMode label {
+  color: #FFF; }
+.purpleMode .new-message {
+  background-color: #9d87ae;
+  color: white; }
+  .purpleMode .new-message span {
+    display: block;
+    margin-bottom: 2px; }
+.purpleMode .my-message {
+  background-color: #7b658b;
+  color: white; }
+
 #circleBlack {
   font-size: 2.5em;
   margin-top: 60%;
-  color: black; }
+  color: black;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 #circleWhite {
   font-size: 2.5em;
   margin-top: 60%;
-  color: white; }
+  color: white;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 #circleRust {
   font-size: 2.5em;
   margin-top: 60%;
-  color: #C97253; }
+  color: #C97253;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 #circleGreen {
   font-size: 2.5em;
   margin-top: 60%;
-  color: #3d4e49; }
+  color: #9AB188;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 #circlePink {
   font-size: 2.5em;
   margin-top: 60%;
-  color: pink; }
+  color: pink;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 #circleSunset {
   font-size: 2.5em;
   margin-top: 60%;
-  color: #fcbf83; }
+  color: #fcbf83;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
+
+#circleBeach {
+  font-size: 2.5em;
+  margin-top: 60%;
+  color: #c2d8e3;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
+
+#circlePurple {
+  font-size: 2.5em;
+  margin-top: 60%;
+  color: #7b658b;
+  border: 1px #3a3a3a;
+  text-shadow: 1px 1px 2px #3a3a3a; }
 
 /*# sourceMappingURL=main.css.map */
